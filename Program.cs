@@ -98,6 +98,8 @@ namespace HPSiteMap
             s = t.Replace("Press", "");
             t = s.Replace("Conferencing", "Conference");
             s = t.Replace("PostMore", "Post");
+            t = s.Replace("Questions", "Question");
+            s = t.Replace("OperatingSystems", "_OS_");
             string a = s.Substring(0, 1).ToUpper();
             return a + s.Substring(1);
         }
