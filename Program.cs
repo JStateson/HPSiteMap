@@ -81,12 +81,23 @@ namespace HPSiteMap
             return n + (m - remainder);
         }
 
-        static string sClean(string s)
+        static string pClean(string s)
         {
             string t = s.Replace("_and_", "");
             s = t.Replace("-and-", "");
             t = s.Replace("-", "");
             s = t.Replace("_", "");
+            string a = s.Substring(0, 1).ToUpper();
+            return a + s.Substring(1);
+        }
+
+        // want to reduce the width of a few large lines
+        static string sClean(string s)
+        {
+            string t = s.Replace("Workstations", "");
+            s = t.Replace("Press", "");
+            t = s.Replace("Conferencing", "Conference");
+            s = t.Replace("PostMore", "Post");
             string a = s.Substring(0, 1).ToUpper();
             return a + s.Substring(1);
         }
@@ -138,7 +149,7 @@ namespace HPSiteMap
                     LineOut += "<td>" + UrlA + "</td>";
                     LineOut += "</tr>";
                     string sUL = FormUrl("https://h30434.www3.hp.com/t5/forums/postpage/board-id/" + sAsk,
-                        sP);//sClean(sAsk));
+                        sClean(sP));//sClean(sAsk));
                     ul.Add(sUL);
                 }
             }
