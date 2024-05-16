@@ -56,6 +56,7 @@ namespace HPSiteMap
             if (i < 0)
             {
                 i = s.IndexOf("/bg-p/");
+                n = i + 6;
             }
             if (i < 0)
             {
