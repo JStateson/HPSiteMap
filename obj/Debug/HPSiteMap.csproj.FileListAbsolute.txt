@@ -1,0 +1,7 @@
+C:\Users\josep\source\repos\HPSiteMap\bin\Debug\HPSiteMap.exe.config
+C:\Users\josep\source\repos\HPSiteMap\bin\Debug\HPSiteMap.exe
+C:\Users\josep\source\repos\HPSiteMap\bin\Debug\HPSiteMap.pdb
+C:\Users\josep\source\repos\HPSiteMap\obj\Debug\HPSiteMap.csproj.AssemblyReference.cache
+C:\Users\josep\source\repos\HPSiteMap\obj\Debug\HPSiteMap.csproj.CoreCompileInputs.cache
+C:\Users\josep\source\repos\HPSiteMap\obj\Debug\HPSiteMap.exe
+C:\Users\josep\source\repos\HPSiteMap\obj\Debug\HPSiteMap.pdb
