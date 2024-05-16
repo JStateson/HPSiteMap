@@ -138,7 +138,7 @@ namespace HPSiteMap
                     LineOut += "<td>" + UrlA + "</td>";
                     LineOut += "</tr>";
                     string sUL = FormUrl("https://h30434.www3.hp.com/t5/forums/postpage/board-id/" + sAsk,
-                        sClean(sAsk));
+                        sP);//sClean(sAsk));
                     ul.Add(sUL);
                 }
             }
