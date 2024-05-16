@@ -81,6 +81,16 @@ namespace HPSiteMap
             return n + (m - remainder);
         }
 
+        static string sClean(string s)
+        {
+            string t = s.Replace("_and_", "");
+            s = t.Replace("-and-", "");
+            t = s.Replace("-", "");
+            s = t.Replace("_", "");
+            string a = s.Substring(0, 1).ToUpper();
+            return a + s.Substring(1);
+        }
+
         static void Main(string[] args)
         {
             cItem ci = new cItem();
@@ -127,7 +137,8 @@ namespace HPSiteMap
                     string UrlA = FormUrl("https://h30434.www3.hp.com/t5/forums/postpage/board-id/" + sAsk, "Start a conversation");
                     LineOut += "<td>" + UrlA + "</td>";
                     LineOut += "</tr>";
-                    string sUL = FormUrl("https://h30434.www3.hp.com/t5/forums/postpage/board-id/" + sAsk, sAsk);
+                    string sUL = FormUrl("https://h30434.www3.hp.com/t5/forums/postpage/board-id/" + sAsk,
+                        sClean(sAsk));
                     ul.Add(sUL);
                 }
             }
